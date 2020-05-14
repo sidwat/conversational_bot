@@ -78,17 +78,17 @@
     </category>
     <category>
         <pattern>1</pattern>
-        <template>Welcome to the <set name='topic'>first</set> task. Sir, please type your name, phone number, address, and your order with the format as (credential's type) (credential).</template>
+        <template>Welcome to the <set name='topic'>FIRST</set> task. Sir, please type your name, phone number, address, and your order with the format as (credential's type) (credential).</template>
     </category>
     <category>
         <pattern>* 1</pattern>
-        <template>Welcome to the <set name='topic'>first</set> task. Sir, please type your name, phone number, address, and your order with the format as (credential's type) (credential).</template>
+        <template>Welcome to the <set name='topic'>FIRST</set> task. Sir, please type your name, phone number, address, and your order with the format as (credential's type) (credential).</template>
     </category>
     <category>
         <pattern>first</pattern>
-        <template>Welcome to the <set name='topic'>first</set> task. Sir, please type your name, phone number, address, and your order with the format as (credential's type) (credential).</template>
+        <template>Welcome to the <set name='topic'>FIRST</set> task. Sir, please type your name, phone number, address, and your order with the format as (credential's type) (credential).</template>
     </category>
-    <topic name='first'>
+    <topic name='FIRST'>
         <category>
             <pattern>NAME *</pattern>
             <template><think><set name='name'><star/></set></think>Your name recorded! You can change your name by retyping in the given format.</template>
