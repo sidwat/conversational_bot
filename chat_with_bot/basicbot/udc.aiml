@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <category>
+        <pattern>HELLO</pattern>
+        <template>Hello! I am a Customer serving bot, popularly known as CBS. How can I help you?</template>
+    </category>
+    <category>
+        <pattern>* HELLO</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>* HELLO *</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>HELLO *</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>* WHO * YOU</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>* WHO * YOU *</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>* WHAT * NAME</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>* WHAT * NAME *</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>HI</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+        <category>
+        <pattern>HI *</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    <category>
+        <pattern>HELP ME</pattern>
+        <template>
+            Here is how I can help you:
+            1. Place the order.
+            2. Track your order.
+            3. Change/Edit your order.
+            4. Cancel the order.
+            5. Give feedback on our last order.
+            Till now only first service is available, we would soon provide other services.
+        </template>
+    </category>
+    <category>
+        <pattern>* HELP ME</pattern>
+        <template><srai>HELP ME</srai></template>
+    </category>
+    <category>
+        <pattern>* HELP ME *</pattern>
+        <template><srai>HELP ME</srai></template>
+    </category>
+    <category>
+        <pattern>* HOW * HELP</pattern>
+        <template><srai>HELP ME</srai></template>
+    </category>
+    <category>
+        <pattern>* HOW * HELP *</pattern>
+        <template><srai>HELP ME</srai></template>
+    </category>
+    <category>
+        <pattern>* WHAT * YOU * DO</pattern>
+        <template><srai>HELP ME</srai></template>
+    </category>
+    <category>
+        <pattern>* WHAT * YOU * DO *</pattern>
+        <template><srai>HELP ME</srai></template>
+    </category>
+    <category>
+        <pattern>1</pattern>
+        <template>Welcome to the <set name='topic'>first</set> task. Sir, please type your name, phone number, address, and your order with the format as (credential's type) (credential).</template>
+    </category>
+    <category>
+        <pattern>* 1</pattern>
+        <template>Welcome to the <set name='topic'>first</set> task. Sir, please type your name, phone number, address, and your order with the format as (credential's type) (credential).</template>
+    </category>
+    <category>
+        <pattern>first</pattern>
+        <template>Welcome to the <set name='topic'>first</set> task. Sir, please type your name, phone number, address, and your order with the format as (credential's type) (credential).</template>
+    </category>
+    <topic name='first'>
+        <category>
+            <pattern>NAME *</pattern>
+            <template><think><set name='name'><star/></set></think>Your name recorded! You can change your name by retyping in the given format.</template>
+        </category>
+        <category>
+            <pattern>PHONE NUMBER *</pattern>
+            <template><think><set name='phone'><star/></set></think>Your phone number recorded! You can change your phone number by retyping in the given format</template>
+        </category>
+        <category>
+            <pattern>ADDRESS *</pattern>
+            <template><think><set name='address'><star/></set></think>Your address recorded! You can change your address by retyping in the given format</template>
+        </category>
+        <category>
+            <pattern>ORDER *</pattern>
+            <template><think><set name='order'><star/></set></think>Your order recorded! You can change your order by retyping in the given format</template>
+        </category>
+        <category>
+            <pattern>SHOW ME MY LAST ORDER</pattern>
+            <template>Thanks for ordering! Your last orders details are as follows: Name: <get name='name'/>, Phone Number: <get name='phone'/>, Address: <get name="address"/>, Order: <get name="order"/></template>
+        </category>
+        <category>
+            <pattern>* SHOW ME MY LAST ORDER</pattern>
+            <template><srai>SHOW ME MY LAST ORDER</srai></template>
+        </category>
+        <category>
+            <pattern>* SHOW ME MY LAST ORDER *</pattern>
+            <template>Thanks for ordering! Your last orders details are as follows: Name: <get name='name'/>, Phone Number: <get name='phone'/>, Address: <get name="address"/>, Order: <get name="order"/></template>
+        </category>
+    </topic>
+</aiml>

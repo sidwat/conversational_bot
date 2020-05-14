@@ -1,0 +1,2 @@
+Here is the link to the google colab notebook for the aiml project:
+https://colab.research.google.com/drive/1sHgLl-BfJXnhxmrUAwV6iODgXeECvGWS?usp=sharing
